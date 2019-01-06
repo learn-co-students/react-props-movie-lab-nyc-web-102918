@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import MovieCard from './card-components/MovieCard.js'
 import movieData from './data.js'
-import { ENGINE_METHOD_DIGESTS } from 'constants';
+// import { ENGINE_METHOD_DIGESTS } from 'constants';
 
 export default class MovieShowcase extends Component {
 

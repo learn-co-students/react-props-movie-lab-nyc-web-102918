@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import MovieCard from './card-components/MovieCard.js'
 import movieData from './data.js'
+import { ENGINE_METHOD_DIGESTS } from 'constants';
 
 export default class MovieShowcase extends Component {
 
   generateMovieCards = () => {
-    // map over your movieData array and return the correct 
+   
+    return movieData.map((movie, index) => 
+      <MovieCard {...movie} key={movie.id}/>
+    ) 
   }
+
 
   render() {
     return (

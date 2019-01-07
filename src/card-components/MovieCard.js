@@ -40,4 +40,19 @@ export default class MovieCard extends Component {
   }
 }
 
+
+
 // Don't forget your default props!
+
+MovieCard.defaultProps = {
+  title: "Unknown",
+  IMDBRating: null,
+  // el error en la consola lo tiene en brackets no estoy muy seguro de porque lleva brackets
+  genres: ['No Genre(s) Found'],
+  poster: "default"
+}
+
+
+//genres should receive a value that will work with our CardBack component's rendering method for genres. The screen should read: 'No Genre(s) Found'
+//poster should get the string default
+//pass the correct props to the correct back/front components (Note: the posterMap already takes care of converting a string into the appropriate poster asset)
